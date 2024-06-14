@@ -4,27 +4,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Balm Dotcom</title>
-    <link rel="icon" type="image/x-icon" href="images/lip-emoji.jpg">
+    <link rel="icon" type="image/x-icon" href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/984/original/wildfig-swatch.jpg?1718381273">
 </head>
+
+
+<style>
+    body {
+    font-family: "Poppins", sans-serif;
+    background: #010130;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 64px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-3-columns-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-header.grid {
+    gap: 0;
+}
+
+.card-header img{
+    aspect-ratio: 4.5/5;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 25px 30px;
+}
+
+.btn {
+    display: block;
+    color: white;
+    background-color: #010130;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+}
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+section.secondary {
+    background: #f8f8f8;
+}
+
+header {
+    background-image: linear-gradient(rgba(1, 1, 48, 0.5), rgba(1, 1, 48, 0.8)),
+        url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/979/original/glossier_bdc_white_background.jpg?1718380912');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 140px 0;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    color: #010130;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
+}
+
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #010130;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #010130;
+    margin: 0px;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #010130;
+    margin: 0;
+    text-align: center;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #010130;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #010130;
+    opacity: 0.8;
+}
+
+footer {
+    color: white;
+    background-image: linear-gradient(rgba(1, 1, 48, 0.9), rgba(1, 1, 48, 0.9)),
+        url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/980/original/bdc_pink_background.jpg?1718381000');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 24px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    opacity: 0.7;
+}
+
+@media (max-width:960px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .grid-2-columns {
+        text-align: center;
+    }
+
+    .img-responsive {
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16/9;
+    }
+}
+</style>
+
+
 <body>
     <div class="container">
         <header>
             <h3>.GLOSSIER.</h3>
             <h1>Balm Dotcom</h1>
-            <h2>The Clean Beauty Accessory</h2>
+            <h2>The Clean Beauty Must-Have Accessory</h2>
             <a href="#more">Learn More</a>
         </header>
         <main>
             <section class="grid grid-2-columns">
                 <div>
-                    <img src="images/strawberry-balm-dotcom.jpeg" alt="Girl with Strawberry Balm Dotcom" class="img-responsive">
+                    <img 
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/981/original/strawberry-balm-dotcom.jpeg?1718381089" 
+                        alt="Girl with Strawberry Balm Dotcom" 
+                        class="img-responsive"
+                    >
                 </div>
                 <div>
                     <a name="more">
@@ -34,15 +301,13 @@
                     <p>
                         Meet Balm Dotcom, your new everyday essential from Glossier. This universal skin salve is your best defense against dry,
                         chapped skin, offering a nourishing hug wherever you need it. Packed with antioxidants and natural emollients, it
-                        hydrates and soothes instantly. Use it on your lips, cuticles, elbows—anywhere that needs a little extra love. The
-                        thick, waxy texture ensures it stays put, providing long-lasting protection and moisture. Plus, with flavors and tints
+                        hydrates and soothes instantly. Use it on your lips, cuticles, elbows—anywhere that needs a little extra love. Plus, with flavors and tints
                         that add a subtle sheen, it's perfect for a natural, dewy look on the go.
                     </p>
                     <p>
                         Balm Dotcom isn't just a skincare product—it's a lifestyle staple. Infused with the best ingredients, it creates a
                         protective barrier against the elements while delivering a dose of hydration that lasts. The sleek, portable tube fits
-                        easily into your bag, so you're never without your skin's best friend. Whether you're battling winter dryness or just
-                        need a touch-up, Balm Dotcom is there for you. Join the community of Glossier fans who swear by its transformative power
+                        easily into your bag, so you're never without your skin's best friend. Join the community of Glossier fans who swear by its transformative power
                         and make it a part of your daily routine. Your skin will thank you.
                     </p>
                 </div>
@@ -55,13 +320,13 @@
             
                     <div class="card">
                         <div class="card-header grid grid-2-columns">
-                            <img src="images/mango-swatch.jpeg" alt="Mango Lip Swatch" class="img-responsive">
-                            <img src="images/mango-lips.jpeg" alt="Mango Lips" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/982/original/mango-swatch.jpeg?1718381197" alt="Mango Lip Swatch" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/983/original/mango-lips.jpeg?1718381212" alt="Mango Lips" class="img-responsive">
                         </div>
                         <div class="card-body">
                             <h4>Mango</h4>
                             <p>
-                               Fresh and juicy with a peachy-rose tint
+                               Fresh and juicy with a peachy rose tint
                             </p>
                             <h5>Price</h5>
                             <p>$14 USD</p>
@@ -79,8 +344,8 @@
                     
                     <div class="card">
                         <div class="card-header grid grid-2-columns">
-                            <img src="images/wildfig-swatch.jpg" alt="Wild Fig Lip Swatch" class="img-responsive">
-                            <img src="images/wildfig-lips.jpg" alt="Mango Lips" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/984/original/wildfig-swatch.jpg?1718381273" alt="Wild Fig Lip Swatch" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/985/original/wildfig-lips.jpg?1718381285" alt="Mango Lips" class="img-responsive">
                         </div>
                         <div class="card-body">
                             <h4>Wild Fig</h4>
@@ -92,7 +357,7 @@
                             <h5>What people say</h5>
                             <p>
                                 "Glossier's Wild fig Balm Dotcom offers a sweet summer solution for dry lips, 
-                                infused with the refreshing aroma of fig and summer tones while providing lasting hydration."—Glamour
+                                infused with the refreshing aroma of fig and peach tones while providing lasting hydration."—Glamour
                             </p>
                         </div>
                         <div class="card-footer">
@@ -104,8 +369,8 @@
 
                     <div class="card">
                         <div class="card-header grid grid-2-columns">
-                            <img src="images/mint-swatch.jpg" alt="Mint Lip Swatch" class="img-responsive">
-                            <img src="images/mint-lips.jpg" alt="Mango Lips" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/986/original/mint-swatch.jpg?1718381341" alt="Mint Lip Swatch" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/987/original/mint-lips.jpg?1718381364" alt="Mango Lips" class="img-responsive">
                         </div>
                         <div class="card-body">
                             <h4>Mint</h4>
@@ -135,22 +400,22 @@
                 <div class="instagram-embeds">
                     <div class="grid grid-3-columns-gallery">
                         <a href="https://www.instagram.com/glossier/p/C7oxWlrO1Cg/?hl=en&img_index=1" target="_blank">
-                            <img src="images/insta-1.jpg" alt="Girl using balmdotcom" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/988/original/insta-1.jpg?1718381466" alt="Girl using balmdotcom" class="img-responsive">
                         </a>
                         <a href="https://www.instagram.com/glossier/p/C7rXJ5osaDz/?hl=en" target="_blank">
-                            <img src="images/insta-2.jpg" alt="Balm dotcom on phone" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/989/original/insta-2.jpg?1718381475" alt="Balm dotcom on phone" class="img-responsive">
                         </a>
                         <a href="https://www.instagram.com/glossier/p/C7b-cxXO9ep/?hl=en&img_index=1" target="_blank">
-                            <img src="images/insta-3.jpg" alt="Balm dotcom in mirror" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/990/original/insta-3.jpg?1718381484" alt="Balm dotcom in mirror" class="img-responsive">
                         </a>
                         <a href="https://www.instagram.com/glossier/p/C7MeLIvx2hQ/?hl=en&img_index=1" target="_blank">
-                            <img src="images/insta-4.jpg" alt="Camera with balm dotcom" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/991/original/insta-4.jpg?1718381499" alt="Camera with balm dotcom" class="img-responsive">
                         </a>
                         <a href="https://www.instagram.com/glossier/p/C7J4JglxkoF/?hl=en&img_index=1" target="_blank">
-                            <img src="images/insta-5.jpg" alt="Blonde girl with balmdotcom" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/992/original/insta-5.jpg?1718381508" alt="Blonde girl with balmdotcom" class="img-responsive">
                         </a>
                         <a href="https://www.instagram.com/glossier/p/C7eeWLKOB2p/?hl=en&img_index=3" target="_blank">
-                            <img src="images/insta-6.jpg" alt="Balm dotcom in the car" class="img-responsive">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/993/original/insta-6.jpg?1718381519" alt="Balm dotcom in the car" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -183,7 +448,7 @@
                     <p>
                         Hi! my name is Charmaine and
                         I love Glossier and the balm dotcom has been my favourite accessory since its inception. I created this
-                        page as a part of the SheCodes coding competition and to demonstrate my responsive
+                        page as a part of the SheCodes "Must-Have Accessory" coding challenge and to demonstrate my responsive
                         design skills.
                     </p>
                 </div>
