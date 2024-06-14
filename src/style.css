@@ -1,7 +1,260 @@
-h1{
-    font-family: "Poppins";
-    font-style: normal;
+body {
+    font-family: "Poppins", sans-serif;
+    background: #010130;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 64px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+    margin: 10px 0;
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-header.grid {
+    gap: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 25px 30px;
+}
+
+.btn {
+    display: block;
+    color: white;
+    background-color: #010130;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+}
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+section.secondary {
+    background: #f8f8f8;
+}
+
+header {
+    background-image: linear-gradient(rgba(1, 1, 48, 0.5), rgba(1, 1, 48, 0.8)),
+        url('../images/glossier_bdc_white_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 140px 0;
+}
+
+header h1 {
     font-weight: 700;
     font-size: 96px;
-    line-height: 144px;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    color: #010130;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
+}
+
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #010130;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #010130;
+    margin: 0;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #010130;
+    margin: 0;
+    text-align: center;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #010130;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010130;
+    opacity: 0.8;
+}
+
+footer {
+    color: white;
+    background-image: linear-gradient(rgba(1, 1, 48, 0.9), rgba(1, 1, 48, 0.9)),
+        url('../images/vineyard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 24px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    opacity: 0.7;
+}
+
+@media (max-width:960px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .grid-2-columns {
+        text-align: center;
+    }
+
+    .img-responsive {
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16/9;
+    }
 }
