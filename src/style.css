@@ -32,14 +32,8 @@ body {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-.embed {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1 /1;
-}
-
-.instagram-embeds {
-    margin: 10px 0;
+.grid-3-columns-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -154,7 +148,7 @@ main h3 {
     font-size: 40px;
     line-height: 1.5;
     color: #010130;
-    margin: 0;
+    margin: 0px;
 }
 
 main h4 {
@@ -186,7 +180,7 @@ main p {
 footer {
     color: white;
     background-image: linear-gradient(rgba(1, 1, 48, 0.9), rgba(1, 1, 48, 0.9)),
-        url('../images/vineyard.jpg');
+        url('../images/bdc_pink_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
