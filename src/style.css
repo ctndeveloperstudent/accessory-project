@@ -51,6 +51,10 @@ body {
     gap: 0;
 }
 
+.card-header img{
+    aspect-ratio: 4.5/5;
+}
+
 .card-body {
     padding: 30px;
 }
